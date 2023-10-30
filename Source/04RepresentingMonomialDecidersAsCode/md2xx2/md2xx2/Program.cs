@@ -1,18 +1,4 @@
-# Applications of Monomial Deciders
-
-This is an etension of the article, "A Language Of Polynomials", with examples of how to use it.
-
-## Starting With A Theorem Of Infiniteness
-![Starting With A Theorem Of Infiniteness](Resources/01StartingWithATheoremOfInfiniteness.jpg)
-## Mapping Out Worlds
-![Mapping Out Worlds](Resources/02MappingOutWorlds.jpg)
-## Euler's Constant
-![Euler's Constant](Resources/03EulersConstant.jpg)
-## Sketching Into Code
-![Sketching Into Code](Resources/04SketchingIntoCode.jpg)
-
-```cs
-bool generalizedMD(int y)
+﻿bool generalizedMD(int y)
 {
     if (y == 0)
     {
@@ -39,12 +25,7 @@ bool generalizedMD(int y)
     }
     return true;
 }
-```
 
-## Gather Some Data
-![Gathering Some Data](Resources/05GatheringSomeData.jpg)
-
-```cs
 // Generates negatives from a general monomial decider represented as an algorithm so
 // that we can collect data about the negatives
 int[] Generator(int max)
@@ -78,12 +59,15 @@ int[] Generator(int max)
 
     return result;
 }
-```
 
-## Representing Monomial Deciders As Code
-![Representing Monomial Deciders As Code](Resources/06RepresentingMonomialDecidersAsCode.jpg)
+var res = Generator(22);
 
-```cs
+// Generate some examples
+for(int x = 0; x < res.Length; x++)
+{
+    Console.WriteLine("f("+x+") = " + res[x]);
+}
+
 // After getting some log results, we can construct a decider
 bool MonomialDecider2xx(int y)
 {
@@ -91,13 +75,13 @@ bool MonomialDecider2xx(int y)
     var hits = 0;
     var diff = 1;
     var isEven = 0;
+    var constant = 2;
     var s = 0;
 
     while (s <= y)
     {
         for (int i = 0; i < 2; i++)
         {
-    var constant = 2;
             for (int j = 0; j < 2; j++)
             {
                 for (int k = 0; k < 2; k++)
@@ -135,17 +119,18 @@ bool MonomialDecider2xx(int y)
 
     return false;
 }
-```
 
-----
+var ys = new List<int>();
 
-## WIP
-![Samples of Use Cases](Resources/usecases.png)
-![Quantum States for the Hydrogen Wave Function](Resources/quantumstates.png)
-![N Grams Representation](Resources/ngrams.png)
+for (int i = 0; i < 1000; i++)
+{
+    if (MonomialDecider2xx(i))
+    {
+        ys.Add(i);
+    }
+}
 
------
+Console.WriteLine(ys.Count);
 
-## References
+Console.WriteLine("2,000,000 in f(x)? " + MonomialDecider2xx(2000000));
 
-Ung, E. (2023). [A Language of Polynomials](https://github.com/ericung/languageofpolynomials) (Version 1.0.0). https://github.com/ericung/languageofpolynomials
