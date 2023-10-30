@@ -20,4 +20,4 @@ This is an etension of the article, "A Language Of Polynomials", with examples o
 
 ## References
 
-Ung, E. (2023). Ung, E. (2023). [A Language of Polynomials](https://github.com/ericung/languageofpolynomials) (Version 1.0.0). https://github.com/ericung/languageofpolynomials
+Ung, E. (2023). [A Language of Polynomials](https://github.com/ericung/languageofpolynomials) (Version 1.0.0). https://github.com/ericung/languageofpolynomials
