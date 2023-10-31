@@ -145,7 +145,7 @@ bool MonomialDecider2xx(int y)
 
 ## 7. Negative Numbers
 
-![Negative Numbers](Resources/NegativeNumbers.jpg)
+![Negative Numbers](Resources/07NegativeNumbers.jpg)
 
 ## 88. Pi
 
