@@ -2,13 +2,20 @@
 
 This is an etension of the article, "A Language Of Polynomials", with examples of how to use it.
 
-## Starting With A Theorem Of Infiniteness
+## 1. Starting With A Theorem Of Infiniteness
+
 ![Starting With A Theorem Of Infiniteness](Resources/01StartingWithATheoremOfInfiniteness.jpg)
-## Mapping Out Worlds
+
+## 2. Mapping Out Worlds
+
 ![Mapping Out Worlds](Resources/02MappingOutWorlds.jpg)
-## Euler's Constant
+
+## 3. Euler's Constant
+
 ![Euler's Constant](Resources/03EulersConstant.jpg)
-## Sketching Into Code
+
+## 4. Sketching Into Code
+
 ![Sketching Into Code](Resources/04SketchingIntoCode.jpg)
 
 ```cs
@@ -41,7 +48,7 @@ bool generalizedMD(int y)
 }
 ```
 
-## Gather Some Data
+## 5. Gather Some Data
 ![Gathering Some Data](Resources/05GatheringSomeData.jpg)
 
 ```cs
@@ -80,7 +87,7 @@ int[] Generator(int max)
 }
 ```
 
-## Representing Monomial Deciders As Code
+## 6. Representing Monomial Deciders As Code
 ![Representing Monomial Deciders As Code](Resources/06RepresentingMonomialDecidersAsCode.jpg)
 
 ```cs
@@ -136,6 +143,10 @@ bool MonomialDecider2xx(int y)
     return false;
 }
 ```
+
+## 7. Negative Numbers
+
+![Negative Numbers](Resources/NegativeNumbers.png)
 
 ----
 
