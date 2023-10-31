@@ -1,6 +1,6 @@
 # Applications of Monomial Deciders
 
-This is an etension of the article, "A Language Of Polynomials", with examples of how to use it.
+This is part 2 of the article, "A Language Of Polynomials", with concrete some examples of how to use it.
 
 ## 1. Starting With A Theorem Of Infiniteness
 
@@ -143,11 +143,13 @@ bool MonomialDecider2xx(int y)
 }
 ```
 
+[Logs in case you are curious.](Source/md2xx2/md2xx2/res.txt)
+
 ## 7. Negative Numbers
 
 ![Negative Numbers](Resources/07NegativeNumbers.jpg)
 
-## 88. Pi
+## 8. Pi
 
 ![Pi](Resources/88Pi.jpg)
 
