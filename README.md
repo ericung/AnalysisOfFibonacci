@@ -153,8 +153,65 @@ bool MonomialDecider2xx(int y)
 
 ![Pi](Resources/88Pi.jpg)
 
+## 9. Fibonacci
+
+![Fibonnaci](Resources/09Fibonacci.jpg)
+
+Let's take apart the fibonacci sequence and try to find some patterns.
+
+```cs
+int fibonacci(int n)
+{
+    if (n == 0)
+    {
+        return 0;
+    }
+
+    int y = 1;
+    int y1 = 1;
+    int y2 = 0;
+
+    for(int i = 1; i < n; i++)
+    {
+        y = y1 + y2;
+        y2 = y1;
+        y1 = y;
+    }
+
+    return y;
+}
+```
+
+Here's the log for the first 14 entries.
+
+```
+f(	0	) =		0		Ex = 0		eY = 0
+f(	1	) =		1		Ex = 1		eY = 1
+f(	2	) =		1		Ex = 0		eY = 1
+f(	3	) =		2		Ex = 1		eY = 0
+f(	4	) =		3		Ex = 0		eY = 1
+f(	5	) =		5		Ex = 1		eY = 1
+f(	6	) =		8		Ex = 0		eY = 0
+f(	7	) =		13		Ex = 1		eY = 1
+f(	8	) =		21		Ex = 0		eY = 1
+f(	9	) =		34		Ex = 1		eY = 0
+f(	10	) =		55		Ex = 0		eY = 1
+f(	11	) =		89		Ex = 1		eY = 1
+f(	12	) =		144		Ex = 0		eY = 0
+f(	13	) =		233		Ex = 1		eY = 1
+f(	14	) =		377		Ex = 0		eY = 1
+```
+
+[Log files for the curious](Source/fibonacci/fibonacci/res.txt)
+
+## 10. Analysis Of Parity In Fibonacci
+
+![10AnalysisOfParityInFibonacci](Resources\10AnalysisOfParityInFibonacci.jpg)
+
 -----
 
 ## References
 
 Ung, E. (2023). [A Language of Polynomials](https://github.com/ericung/languageofpolynomials) (Version 1.0.0). https://github.com/ericung/languageofpolynomials
+
+Hamming, R. W. (1986). *Numerical methods for scientists and engineers.* Courier Corporation.
