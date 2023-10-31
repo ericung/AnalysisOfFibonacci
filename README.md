@@ -146,7 +146,7 @@ bool MonomialDecider2xx(int y)
 
 ## 7. Negative Numbers
 
-![Negative Numbers](Resources/NegativeNumbers.png)
+![Negative Numbers](Resources/07NegativeNumbers.jpg)
 
 ----
 
