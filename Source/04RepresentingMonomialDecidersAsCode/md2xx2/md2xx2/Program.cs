@@ -81,7 +81,6 @@ bool MonomialDecider2xx(int y)
     {
         for (int i = 0; i < 2; i++)
         {
-    var constant = 2;
             for (int j = 0; j < 2; j++)
             {
                 for (int k = 0; k < 2; k++)

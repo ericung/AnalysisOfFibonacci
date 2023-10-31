@@ -104,7 +104,6 @@ bool MonomialDecider2xx(int y)
     {
         for (int i = 0; i < 2; i++)
         {
-    var constant = 2;
             for (int j = 0; j < 2; j++)
             {
                 for (int k = 0; k < 2; k++)
@@ -146,14 +145,11 @@ bool MonomialDecider2xx(int y)
 
 ## 7. Negative Numbers
 
-![Negative Numbers](Resources/NegativeNumbers.png)
+![Negative Numbers](Resources/NegativeNumbers.jpg)
 
-----
+## 88. Pi
 
-## WIP
-![Samples of Use Cases](Resources/usecases.png)
-![Quantum States for the Hydrogen Wave Function](Resources/quantumstates.png)
-![N Grams Representation](Resources/ngrams.png)
+![Pi](Resources/88Pi.jpg)
 
 -----
 
