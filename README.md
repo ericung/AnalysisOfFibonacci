@@ -1,6 +1,6 @@
 # Applications of Monomial Deciders
 
-This is part 2 of the article, "A Language Of Polynomials", with concrete some examples of how to use it.
+This is part 2 of the article, "A Language Of Polynomials", with concrete some examples of how to use it including constructing the one way function using the picking function.
 
 ## 1. Starting With A Theorem Of Infiniteness
 
