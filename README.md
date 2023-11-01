@@ -212,6 +212,8 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ![11RedrawingTheFibonacciSequence](Resources/11RedrawingTheFibonacciSequenceAsAGenerator.jpg)
 
+Fibonacci generator with the set of generator functions.
+
 ```cs
 int fibonacciGenerator(int n)
 {
