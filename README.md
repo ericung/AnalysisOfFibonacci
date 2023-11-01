@@ -210,7 +210,7 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ## 11. Redrawing the Fibonacci Sequence
 
-![11RedrawingTheFibonacciSequence](Resources/11RedrawingTheFibonacciSequence.jpg)
+![11RedrawingTheFibonacciSequence](Resources/11RedrawingTheFibonacciSequenceAsAGenerator.jpg)
 
 ## 12. The Fibonacci Decider
 
