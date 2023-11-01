@@ -1,4 +1,22 @@
-﻿bool generalizedMD(int y)
+﻿FileStream ostrm2;
+StreamWriter writer2;
+TextWriter oldOut2 = Console.Out;
+try
+{
+    ostrm2 = new FileStream("./generalMdLogs.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+    writer2 = new StreamWriter(ostrm2);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Cannot open Redirect.txt for writing");
+
+    Console.WriteLine(e.Message);
+    return;
+}
+
+
+bool generalizedMD(int y)
 {
     if (y == 0)
     {
@@ -47,8 +65,8 @@ int[] Generator(int max)
             // A simple verifier
             if (num == i)
             {
-                Console.WriteLine(negatives);
-                Console.WriteLine("f(" + x + ") = " + i);
+                Console.WriteLine(negatives.ToString().Replace("^M",""));
+                Console.WriteLine("f(" + x + ") = " + i + "".Replace("^M",""));
                 result[x] = i;
 
                 x++;
@@ -65,17 +83,23 @@ int[] Generator(int max)
     return result;
 }
 
+Console.SetOut(writer2);
+
 // Hits are the number of times the process steps on a finishing state.
-Console.WriteLine("Using the general decider to get the number of hits in the monomial decider.");
+Console.WriteLine("Using the general decider to get the number of hits in the monomial decider.".Replace("^M", ""));
 var res = Generator(22);
 
 // Generate some examples
-Console.WriteLine("\n\nGenerator Function Output");
+Console.WriteLine("\n\nGenerator Function Output".Replace("^M",""));
 
 for(int x = 0; x < res.Length; x++)
 {
-    Console.WriteLine("f("+x+") = " + res[x]);
+    Console.WriteLine(new String("f("+x+") = " + res[x] + "").Replace("^M", ""));
 }
+
+Console.SetOut(oldOut2);
+writer2.Close();
+ostrm2.Close();
 
 // After getting some log results, we can construct a decider
 bool MonomialDecider2xx(int y)
@@ -100,7 +124,7 @@ bool MonomialDecider2xx(int y)
                         {
                             if (s == y)
                             {
-                                Console.WriteLine(s + ": Hits: " + total);
+                                Console.WriteLine(new String(s + ": Hits: " + total + "").Replace("^M",""));
                                 return true;
                             }
                             else if (s > y)
@@ -130,7 +154,26 @@ bool MonomialDecider2xx(int y)
 
 var ys = new List<int>();
 
-Console.WriteLine("\n\nMonomial Decider 2xx deciding.");
+FileStream ostrm;
+StreamWriter writer;
+TextWriter oldOut = Console.Out;
+try
+{
+    ostrm = new FileStream("./monomialDeciderLogs.txt", FileMode.OpenOrCreate, FileAccess.Write);
+
+    writer = new StreamWriter(ostrm);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Cannot open Redirect.txt for writing");
+
+    Console.WriteLine(e.Message);
+    return;
+}
+
+Console.SetOut(writer);
+
+Console.WriteLine("Monomial Decider 2xx deciding.".Replace("^M", ""));
 
 for (int i = 0; i < 1000; i++)
 {
@@ -142,5 +185,9 @@ for (int i = 0; i < 1000; i++)
 
 Console.WriteLine(ys.Count);
 
-Console.WriteLine("2,000,000 in f(x)? " + MonomialDecider2xx(2000000));
+Console.WriteLine(new String("2,000,000 in f(x)? " + MonomialDecider2xx(2000000) + "").Replace("^M", ""));
+
+Console.SetOut(oldOut);
+writer.Close();
+ostrm.Close();
 

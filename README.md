@@ -87,7 +87,7 @@ int[] Generator(int max)
 }
 ```
 
-[Logs in case you are curious.](Source/md2xx2/md2xx2/res.txt)
+[Logs in case you are curious.](Source/md2xx2/md2xx2/generalMdLogs.txt)
 
 ## 6. Representing Monomial Deciders As Code
 ![Representing Monomial Deciders As Code](Resources/06RepresentingMonomialDecidersAsCode.jpg)
@@ -144,6 +144,8 @@ bool MonomialDecider2xx(int y)
     return false;
 }
 ```
+
+[Logs in case for the curious.](Source/md2xx2/md2xx2/monomialDeciderLogs.txt)
 
 ## 7. Negative Numbers
 
