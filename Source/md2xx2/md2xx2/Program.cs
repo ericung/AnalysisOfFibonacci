@@ -4,7 +4,9 @@
     {
         return true;
     }
+
     var s = y;
+
     while (s >= 0)
     {
         for (int i = 0; i < 2; i++)
@@ -23,6 +25,7 @@
             }
         }
     }
+
     return true;
 }
 
@@ -34,9 +37,11 @@ int[] Generator(int max)
     int x = 0;
     int negatives = 0;
     int i = 0;
+
     while (x < max + 1)
     {
         int num = 2 * (Convert.ToInt32(Math.Pow(x, 2)));
+
         if (generalizedMD(i))
         {
             // A simple verifier
@@ -60,9 +65,13 @@ int[] Generator(int max)
     return result;
 }
 
+// Hits are the number of times the process steps on a finishing state.
+Console.WriteLine("Using the general decider to get the number of hits in the monomial decider.");
 var res = Generator(22);
 
 // Generate some examples
+Console.WriteLine("\n\nGenerator Function Output");
+
 for(int x = 0; x < res.Length; x++)
 {
     Console.WriteLine("f("+x+") = " + res[x]);
@@ -120,6 +129,8 @@ bool MonomialDecider2xx(int y)
 }
 
 var ys = new List<int>();
+
+Console.WriteLine("\n\nMonomial Decider 2xx deciding.");
 
 for (int i = 0; i < 1000; i++)
 {
