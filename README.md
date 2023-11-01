@@ -208,6 +208,29 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ![10AnalysisOfParityInFibonacci](Resources\10AnalysisOfParityInFibonacci.jpg)
 
+## 11. Redrawing the Fibonacci Sequence
+
+![11RedrawingTheFibonacciSequence](Resources\11RedrawingTheFibonacciSequence.jpg)
+
+## 12. The Fibonacci Decider
+
+![12FibonacciDecider](Resources\12FibonacciDecider.jpg)
+
+```
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+
+x1 = 144, y1 = 89, z1 = 55, x2 = 34, y2 = 21, z2 = 13
+
+144 = 89 - 13 + 34 - 21 + 55 = 144
+89 = 13 - 34 + 21 - 55 + 144 = 89
+13 = 34 - 21 + 55 - 144 + 89 = 13
+34 = 21 - 55 + 144 - 89 + 13 = 34
+21 = 55 - 144 + 89 - 13 + 34 = 21
+55 = 144 - 89 + 13 - 34 + 21 = 55
+
+```
+
 -----
 
 ## References
