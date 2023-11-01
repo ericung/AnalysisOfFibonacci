@@ -216,7 +216,8 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ![12FibonacciDecider](Resources/12FibonacciDecider.jpg)
 
-Here's the log of the sequence {0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144}
+Given a sequence of length six, we can decide if it forms a valid fibonacci sequence.\
+The following is a log of calculations.
 
 ```
 
