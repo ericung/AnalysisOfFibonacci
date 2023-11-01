@@ -212,6 +212,52 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ![11RedrawingTheFibonacciSequence](Resources/11RedrawingTheFibonacciSequenceAsAGenerator.jpg)
 
+```cs
+int fibonacciGenerator(int n)
+{
+    int stateX = 0;
+    int stateY = 1;
+    int stateZ = 1;
+    int cycles = 0;
+
+    while (cycles <= n)
+    {
+        cycles++;
+
+        if (cycles > n)
+        {
+            return stateX;
+        }
+
+        stateX = stateY + stateZ;
+        Console.WriteLine("stateX: " + stateX + "\tstateY: " + stateY + "\tstateZ: " + stateY);
+
+        
+        cycles++;
+
+        if (cycles > n)
+        {
+            return stateY;
+        }
+
+        stateY = stateX + stateZ;
+        Console.WriteLine("stateX: " + stateX + "\tstateY: " + stateY + "\tstateZ: " + stateY);
+
+        cycles++;
+
+        if (cycles > n)
+        {
+            return stateZ;
+        }
+
+        stateZ = stateX + stateY;
+        Console.WriteLine("stateX: " + stateX + "\tstateY: " + stateY + "\tstateZ: " + stateY);
+    }
+
+    return stateX;
+}
+```
+
 ## 12. The Fibonacci Decider
 
 ![12FibonacciDecider](Resources/12FibonacciDecider.jpg)
