@@ -243,3 +243,5 @@ x1 = 144, y1 = 89, z1 = 55, x2 = 34, y2 = 21, z2 = 13
 Ung, E. (2023). [A Language of Polynomials](https://github.com/ericung/languageofpolynomials) (Version 1.0.0). https://github.com/ericung/languageofpolynomials
 
 Hamming, R. W. (1986). *Numerical methods for scientists and engineers.* Courier Corporation.
+
+Ung, E. (2023). [Inferring Lindenmayer Systems](https://github.com/ericung/InferrenceSystems/blob/master/Resources/lindenmayer_systems.pdf). 1(1), 1–6. https://github.com/ericung/InferrenceSystems/blob/master/Resources/lindenmayer_systems.pdf
