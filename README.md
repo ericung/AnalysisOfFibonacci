@@ -231,7 +231,6 @@ int fibonacciGenerator(int n)
 
         stateX = stateY + stateZ;
         Console.WriteLine("stateX: " + stateX + "\tstateY: " + stateY + "\tstateZ: " + stateY);
-
         
         cycles++;
 
