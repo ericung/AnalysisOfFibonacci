@@ -206,7 +206,7 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ## 10. Analysis Of Parity In Fibonacci
 
-![10AnalysisOfParityInFibonacci](Resources\10AnalysisOfParityInFibonacci.jpg)
+![10AnalysisOfParityInFibonacci](Resources/10AnalysisOfParityInFibonacci.jpg)
 
 ## 11. Redrawing the Fibonacci Sequence
 
