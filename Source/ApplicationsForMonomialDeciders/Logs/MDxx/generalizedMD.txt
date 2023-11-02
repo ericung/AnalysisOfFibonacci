@@ -1,4 +1,7 @@
 Using the general decider to get the number of hits in the monomial decider.
+
+
+Generator Function Output
 0
 f(0) = 0
 0
@@ -45,9 +48,6 @@ f(20) = 800
 f(21) = 882
 31
 f(22) = 968
-
-
-Generator Function Output
 f(0) = 0
 f(1) = 2
 f(2) = 8

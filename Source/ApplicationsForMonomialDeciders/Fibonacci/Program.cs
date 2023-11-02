@@ -77,9 +77,7 @@ int fibonacciGenerator(int n)
 FileStream ostrmFib;
 StreamWriter writerFib;
 Log.Create(out ostrmFib, out writerFib, Log.FIBONACCIPATH, Log.FIBONACCI);
-
 Console.Out.NewLine = "\n";
-
 
 Console.WriteLine("Generates fibonacci using dynamic programming");
 

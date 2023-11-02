@@ -13,12 +13,13 @@
         public static void Create(out FileStream ostrm, out StreamWriter writer, string path, string fileName)
         {
             var filePath = Path.Combine(path, fileName);
+            var errorPath = filePath.Replace(".txt", "Error.txt");
 
             try
             {
                 Directory.CreateDirectory(path);
                 File.Delete(filePath);
-                File.Delete(filePath.Replace(".txt", "Error.txt"));
+                File.Delete(errorPath);
                 ostrm = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
                 writer = new StreamWriter(ostrm);
             }
@@ -26,7 +27,7 @@
             {
                 Console.WriteLine("Cannot open Redirect.txt for writing");
                 Console.WriteLine(e.Message);
-                ostrm = new FileStream(filePath.Replace(".txt", "Error.txt"), FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                ostrm = new FileStream(errorPath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
                 writer = new StreamWriter(ostrm);
             }
 

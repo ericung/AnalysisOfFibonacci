@@ -133,9 +133,9 @@ StreamWriter writerGMD;
 Common.Log.Create(out ostrmGMD, out writerGMD, Log.MDXXPATH, Log.GENERALIZEDMD);
 
 Console.WriteLine("Using the general decider to get the number of hits in the monomial decider.");
-var res = Generator(22);
-
 Console.WriteLine("\n\nGenerator Function Output");
+
+var res = Generator(22);
 
 for (int x = 0; x < res.Length; x++)
 {
@@ -155,17 +155,17 @@ Common.Log.Create(out ostrmMD, out writerMD, Log.MDXXPATH, Log.MD2XX);
 
 Console.WriteLine("Monomial Decider 2xx deciding");
 
-var ys = new List<int>();
+var ys = 0;
 
 for (int i = 0; i < 1000; i++)
 {
     if (MonomialDecider2xx(i))
     {
-        ys.Add(i);
+        ys++;
     }
 }
 
-Console.WriteLine("Number of y's accepted between 0 and 999: " + ys.Count);
+Console.WriteLine("Number of y's accepted between 0 and 999: " + ys);
 Console.WriteLine(new String("2,000,000 in f(x)? " + MonomialDecider2xx(2000000)));
 
 writerMD.Close();
