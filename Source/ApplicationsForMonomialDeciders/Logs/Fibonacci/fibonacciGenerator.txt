@@ -1,0 +1,56 @@
+Generates fibonacci sequence using generators
+f(	0	) =		0
+stateX: 2	stateY: 1	stateZ: 1
+f(	1	) =		1
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+f(	2	) =		1
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+f(	3	) =		2
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 8	stateY: 3	stateZ: 3
+f(	4	) =		3
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 8	stateY: 3	stateZ: 3
+stateX: 8	stateY: 13	stateZ: 13
+f(	5	) =		5
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 8	stateY: 3	stateZ: 3
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 8	stateY: 13	stateZ: 13
+f(	6	) =		8
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 8	stateY: 3	stateZ: 3
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 34	stateY: 13	stateZ: 13
+f(	7	) =		13
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 8	stateY: 3	stateZ: 3
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 34	stateY: 13	stateZ: 13
+stateX: 34	stateY: 55	stateZ: 55
+f(	8	) =		21
+stateX: 2	stateY: 1	stateZ: 1
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 2	stateY: 3	stateZ: 3
+stateX: 8	stateY: 3	stateZ: 3
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 8	stateY: 13	stateZ: 13
+stateX: 34	stateY: 13	stateZ: 13
+stateX: 34	stateY: 55	stateZ: 55
+stateX: 34	stateY: 55	stateZ: 55
+f(	9	) =		34
