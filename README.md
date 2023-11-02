@@ -87,7 +87,7 @@ int[] Generator(int max)
 }
 ```
 
-[Logs in case you are curious.](Source/md2xx2/md2xx2/generalMdLogs.txt)
+[Logs for the curious.](Source/ApplicationsForMonomialDeciders/Logs/MD2xx/generalizedMD.txt)
 
 ## 6. Representing Monomial Deciders As Code
 ![Representing Monomial Deciders As Code](Resources/06RepresentingMonomialDecidersAsCode.jpg)
@@ -145,7 +145,7 @@ bool MonomialDecider2xx(int y)
 }
 ```
 
-[Logs in case for the curious.](Source/md2xx2/md2xx2/monomialDeciderLogs.txt)
+[Logs in case for the curious.](Source/ApplicationsForMonomialDeciders/Logs/MD2xx/md2xx.txt)
 
 ## 7. Negative Numbers
 
@@ -204,7 +204,7 @@ f(	13	) =		233		Ex = 1		eY = 1
 f(	14	) =		377		Ex = 0		eY = 1
 ```
 
-[Log files for the curious](Source/fibonacci/fibonacci/res.txt)
+[Logs for the curious.](Source/ApplicationsForMonomialDeciders/Logs/Fibonacci/fibonacci.txt)
 
 ## 10. Analysis Of Parity In Fibonacci
 
@@ -260,6 +260,8 @@ int fibonacciGenerator(int n)
     return stateX;
 }
 ```
+
+[Logs for the curious.](Source/ApplicationsForMonomialDeciders/Logs/Fibonacci/fibonacciGenerator.txt)
 
 ## 12. The Fibonacci Decider
 
