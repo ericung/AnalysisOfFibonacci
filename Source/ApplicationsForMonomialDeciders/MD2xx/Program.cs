@@ -1,20 +1,6 @@
-﻿FileStream ostrm2;
-StreamWriter writer2;
-TextWriter oldOut2 = Console.Out;
-try
-{
-    ostrm2 = new FileStream("./generalMdLogs.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+﻿using Common;
 
-    writer2 = new StreamWriter(ostrm2);
-}
-catch (Exception e)
-{
-    Console.WriteLine("Cannot open Redirect.txt for writing");
-
-    Console.WriteLine(e.Message);
-    return;
-}
-
+#region generalizedMD
 
 bool generalizedMD(int y)
 {
@@ -47,8 +33,10 @@ bool generalizedMD(int y)
     return true;
 }
 
-// Generates negatives from a general monomial decider represented as an algorithm so
-// that we can collect data about the negatives
+#endregion generalizedMD
+
+#region generator
+
 int[] Generator(int max)
 {
     int[] result = new int[max + 1];
@@ -62,11 +50,10 @@ int[] Generator(int max)
 
         if (generalizedMD(i))
         {
-            // A simple verifier
             if (num == i)
             {
-                Console.WriteLine(negatives.ToString().Replace("^M",""));
-                Console.WriteLine("f(" + x + ") = " + i + "".Replace("^M",""));
+                Console.WriteLine(negatives);
+                Console.WriteLine("f(" + x + ") = " + i);
                 result[x] = i;
 
                 x++;
@@ -83,25 +70,10 @@ int[] Generator(int max)
     return result;
 }
 
-Console.SetOut(writer2);
+#endregion generator
 
-// Hits are the number of times the process steps on a finishing state.
-Console.WriteLine("Using the general decider to get the number of hits in the monomial decider.".Replace("^M", ""));
-var res = Generator(22);
+#region md2xx
 
-// Generate some examples
-Console.WriteLine("\n\nGenerator Function Output".Replace("^M",""));
-
-for(int x = 0; x < res.Length; x++)
-{
-    Console.WriteLine(new String("f("+x+") = " + res[x] + "").Replace("^M", ""));
-}
-
-Console.SetOut(oldOut2);
-writer2.Close();
-ostrm2.Close();
-
-// After getting some log results, we can construct a decider
 bool MonomialDecider2xx(int y)
 {
     var total = 0;
@@ -118,13 +90,13 @@ bool MonomialDecider2xx(int y)
             {
                 for (int k = 0; k < 2; k++)
                 {
-                    if ((i == 0)&&(j == 0 || j == 1)&&(k == 0))
+                    if ((i == 0) && (j == 0 || j == 1) && (k == 0))
                     {
                         if (hits == total)
                         {
                             if (s == y)
                             {
-                                Console.WriteLine(new String(s + ": Hits: " + total + "").Replace("^M",""));
+                                Console.WriteLine(new String(s + ": Hits: " + total + ""));
                                 return true;
                             }
                             else if (s > y)
@@ -152,28 +124,38 @@ bool MonomialDecider2xx(int y)
     return false;
 }
 
+#endregion md2xx
+
+#region generalizedRun
+
+FileStream ostrmGMD;
+StreamWriter writerGMD;
+Common.Log.Create(out ostrmGMD, out writerGMD, Log.MDXXPATH, Log.GENERALIZEDMD);
+
+Console.WriteLine("Using the general decider to get the number of hits in the monomial decider.");
+var res = Generator(22);
+
+Console.WriteLine("\n\nGenerator Function Output");
+
+for (int x = 0; x < res.Length; x++)
+{
+    Console.WriteLine(new String("f(" + x + ") = " + res[x] + ""));
+}
+
+writerGMD.Close();
+ostrmGMD.Close();
+
+#endregion generatorRun
+
+#region mdLogRun
+
+FileStream ostrmMD;
+StreamWriter writerMD;
+Common.Log.Create(out ostrmMD, out writerMD, Log.MDXXPATH, Log.MD2XX);
+
+Console.WriteLine("Monomial Decider 2xx deciding");
+
 var ys = new List<int>();
-
-FileStream ostrm;
-StreamWriter writer;
-TextWriter oldOut = Console.Out;
-try
-{
-    ostrm = new FileStream("./monomialDeciderLogs.txt", FileMode.OpenOrCreate, FileAccess.Write);
-
-    writer = new StreamWriter(ostrm);
-}
-catch (Exception e)
-{
-    Console.WriteLine("Cannot open Redirect.txt for writing");
-
-    Console.WriteLine(e.Message);
-    return;
-}
-
-Console.SetOut(writer);
-
-Console.WriteLine("Monomial Decider 2xx deciding.".Replace("^M", ""));
 
 for (int i = 0; i < 1000; i++)
 {
@@ -183,11 +165,11 @@ for (int i = 0; i < 1000; i++)
     }
 }
 
-Console.WriteLine(ys.Count);
+Console.WriteLine("Number of y's accepted between 0 and 999: " + ys.Count);
+Console.WriteLine(new String("2,000,000 in f(x)? " + MonomialDecider2xx(2000000)));
 
-Console.WriteLine(new String("2,000,000 in f(x)? " + MonomialDecider2xx(2000000) + "").Replace("^M", ""));
+writerMD.Close();
+ostrmMD.Close();
 
-Console.SetOut(oldOut);
-writer.Close();
-ostrm.Close();
+#endregion mdLogRun
 
