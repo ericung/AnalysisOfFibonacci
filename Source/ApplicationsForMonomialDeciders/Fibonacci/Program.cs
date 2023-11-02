@@ -72,11 +72,11 @@ int fibonacciGenerator(int n)
 
 #endregion fibonacciGenerator
 
-# region fibonacciRun
+# region main
 
 FileStream ostrmFib;
 StreamWriter writerFib;
-Log.Create(out ostrmFib, out writerFib, "../Logs/Fibonacci/fibonacci.txt");
+Log.Create(out ostrmFib, out writerFib, Log.FIBONACCIPATH, Log.FIBONACCI);
 
 Console.Out.NewLine = "\n";
 
@@ -101,7 +101,7 @@ ostrmFib.Close();
 
 FileStream ostrmFibGen;
 StreamWriter writerFibGen;
-Log.Create(out ostrmFibGen, out writerFibGen, "../Logs/Fibonacci/fibonacciGenerator.txt");
+Log.Create(out ostrmFibGen, out writerFibGen, Log.FIBONACCIPATH, Log.FIBANCCIGENERATOR);
 
 Console.Out.NewLine = "\n";
 Console.WriteLine("Generates fibonacci sequence using generators");
