@@ -3,12 +3,12 @@
     public static class Log
     {
         public const string MDXXPATH = "../Logs/MDxx";
-        public const string MD2XX = "md2xx.txt";
-        public const string GENERALIZEDMD = "generalizedMD.txt";
+        public const string MD2XX = "md2xx.csv";
+        public const string GENERALIZEDMD = "generalizedMD.csv";
 
         public const string FIBONACCIPATH = "../Logs/Fibonacci";
-        public const string FIBONACCI = "fibonacci.txt";
-        public const string FIBANCCIGENERATOR = "fibonacciGenerator.txt";
+        public const string FIBONACCI = "fibonacci.csv";
+        public const string FIBANCCIGENERATOR = "fibonacciGenerator.csv";
 
         public static void Create(out FileStream ostrm, out StreamWriter writer, string path, string fileName)
         {
