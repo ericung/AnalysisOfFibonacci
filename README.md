@@ -145,7 +145,7 @@ bool MonomialDecider2xx(int y)
 }
 ```
 
-[Logs in case for the curious.](Source/ApplicationsForMonomialDeciders/Logs/MDxx/md2xx.txt)
+[Logs for the curious.](Source/ApplicationsForMonomialDeciders/Logs/MDxx/md2xx.txt)
 
 ## 7. Negative Numbers
 
