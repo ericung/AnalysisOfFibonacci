@@ -8,7 +8,7 @@ This is part 2 of the article, "[A Language of Polynomials](https://github.com/e
 
 ## 2. Mapping Out Worlds
 
-![Mapping Out Worlds](https://i.seadn.io/s/raw/files/d7aa0fb86ec30bdf2e6cd21f9ff99684.jpg?auto=format&dpr=1&w=1000)
+![Mapping Out Worlds](Resources/02MappingOutWorlds.jpg)
 
 ## 3. Euler's Constant
 
@@ -265,7 +265,7 @@ int fibonacciGenerator(int n)
 
 ## 12. The Fibonacci Decider
 
-![12FibonacciDecider](https://i.seadn.io/s/raw/files/f3bc75ac1efffa0f55c1a9b6310378dc.jpg?auto=format&dpr=1&w=1000)
+![12FibonacciDecider](Resources/12FibonacciDecider.jpg)
 
 Given a sequence of length six, we can decide if it forms a valid fibonacci sequence.\
 The following is a log of calculations.
