@@ -4,7 +4,7 @@ This is part 2 of the article, "[A Language of Polynomials](https://github.com/e
 
 ## 1. Starting With A Theorem Of Infiniteness
 
-![Starting With A Theorem Of Infiniteness](https://i.seadn.io/s/raw/files/355f7480e3c00dca91baa5e6396a3c1e.jpg?auto=format&dpr=1&w=1000)
+![Starting With A Theorem Of Infiniteness](Resources/01StartingWithATheoremOfInfiniteness.jpg)
 
 ## 2. Mapping Out Worlds
 
@@ -12,11 +12,11 @@ This is part 2 of the article, "[A Language of Polynomials](https://github.com/e
 
 ## 3. Euler's Constant
 
-![Euler's Constant](https://i.seadn.io/s/raw/files/89d733a5810431c70a9ca749ac1ad5ef.jpg?auto=format&dpr=1&w=1000)
+![Euler's Constant](Resources/03EulersConstant.jpg)
 
 ## 4. Sketching Into Code
 
-![Sketching Into Code](https://i.seadn.io/s/raw/files/a41d6f9e8ada79ef18b0ead8acc9a4e7.jpg?auto=format&dpr=1&w=1000)
+![Sketching Into Code](Resources/04SketchingIntoCode.jpg)
 
 ```cs
 bool generalizedMD(int y)
@@ -49,7 +49,8 @@ bool generalizedMD(int y)
 ```
 
 ## 5. Gather Some Data
-![Gathering Some Data](https://i.seadn.io/s/raw/files/eb31664e64ddaf6b9f375981c29343c6.jpg?auto=format&dpr=1&w=1000)
+
+![Gathering Some Data](Resources/05GatheringSomeData.jpg)
 
 ```cs
 // Generates negatives from a general monomial decider represented as an algorithm so
@@ -90,7 +91,7 @@ int[] Generator(int max)
 [Logs for the curious.](Source/ApplicationsForMonomialDeciders/Logs/MDxx/generalizedMD.txt)
 
 ## 6. Representing Monomial Deciders As Code
-![Representing Monomial Deciders As Code](https://i.seadn.io/s/raw/files/a958de4ea888bf0334fb40748f204510.jpg?auto=format&dpr=1&w=1000)
+![Representing Monomial Deciders As Code](Resources/06RepresentingMonomialDecidersAsCode.jpg)
 
 ```cs
 // After getting some log results, we can construct a decider
@@ -149,15 +150,15 @@ bool MonomialDecider2xx(int y)
 
 ## 7. Negative Numbers
 
-![Negative Numbers](https://i.seadn.io/s/raw/files/568874f7852af4b7ee4cc2d3fd58f309.jpg?auto=format&dpr=1&w=1000)
+![Negative Numbers](Resources/07NegativeNumbers.jpg)
 
 ## 8. Pi
 
-![Pi](https://i.seadn.io/s/raw/files/ed6b0ade60a1c9a561ff82b6923f5f2d.jpg?auto=format&dpr=1&w=1000)
+![Pi](Resources/88Pi.jpg)
 
 ## 9. Fibonacci
 
-![Fibonnaci](https://i.seadn.io/s/raw/files/6800e6a3ac49fd70869c386db6c1cf66.jpg?auto=format&dpr=1&w=1000)
+![Fibonnaci](Resources/09Fibonacci.jpg)
 
 Let's take apart the fibonacci sequence and try to find some patterns.
 
@@ -208,11 +209,11 @@ f(	14	) =		377		Ex = 0		eY = 1
 
 ## 10. Analysis Of Parity In Fibonacci
 
-![10AnalysisOfParityInFibonacci](https://i.seadn.io/s/raw/files/c34040025bc28cb993857bff5edfbbe9.jpg?auto=format&dpr=1&w=1000)
+![10AnalysisOfParityInFibonacci](Resources/10AnalysisOfParityInFibonacci.jpg)
 
 ## 11. Redrawing the Fibonacci Sequence
 
-![11RedrawingTheFibonacciSequence](https://i.seadn.io/s/raw/files/bf5eb9dce0f79879f1d58ad07d41218f.jpg?auto=format&dpr=1&w=1000)
+![11RedrawingTheFibonacciSequence](Resources/11RedrawingTheFibonacciSequenceAsAGenerator.jpg)
 
 Fibonacci generator with the set of generator functions.
 
@@ -285,7 +286,7 @@ x1 = 144, y1 = 89, z1 = 55, x2 = 34, y2 = 21, z2 = 13
 
 # 13. The Fibonacci Picking Function
 
-![13FibonacciPickingFunction](https://i.seadn.io/s/raw/files/fc6c93a7b2a2b58d89b98deb05cdf3ff.jpg?auto=format&dpr=1&w=1000)
+![13FibonacciPickingFunction](Resources/13FibonacciPickingFunction.jpg)
 
 -----
 
