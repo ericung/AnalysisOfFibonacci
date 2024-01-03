@@ -284,7 +284,7 @@ x1 = 144, y1 = 89, z1 = 55, x2 = 34, y2 = 21, z2 = 13
 
 ```
 
-# 13. The Fibonacci Picking Function
+## 13. The Fibonacci Picking Function
 
 ![13FibonacciPickingFunction](Resources/13FibonacciPickingFunction.jpg)
 
