@@ -1,4 +1,4 @@
-# Applications of Monomial Deciders
+# Analysis Of Fibonacci
 
 This is part 2 of the article, "[A Language of Polynomials](https://github.com/ericung/languageofpolynomials)", with concrete examples of how to use it including constructing the one way function using the picking function.
 
