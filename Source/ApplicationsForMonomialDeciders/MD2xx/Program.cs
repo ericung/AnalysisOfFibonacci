@@ -76,8 +76,8 @@ int[] Generator(int max)
 
 bool MonomialDecider2xx(int y)
 {
-    var total = 0;
-    var hits = 0;
+    var totalVisits = 0;
+    var currentVisits = 0;
     var diff = 1;
     var isEven = 0;
     var s = 0;
@@ -92,11 +92,11 @@ bool MonomialDecider2xx(int y)
                 {
                     if ((i == 0) && (j == 0 || j == 1) && (k == 0))
                     {
-                        if (hits == total)
+                        if (currentVisits == totalVisits)
                         {
                             if (s == y)
                             {
-                                Console.WriteLine(new String(s + ": Hits: " + total + ""));
+                                Console.WriteLine(new String(s + ": Hits: " + totalVisits + ""));
                                 return true;
                             }
                             else if (s > y)
@@ -104,7 +104,7 @@ bool MonomialDecider2xx(int y)
                                 return false;
                             }
 
-                            total += diff;
+                            totalVisits += diff;
                             isEven++;
                             if (isEven % 3 == 2)
                             {
@@ -113,7 +113,7 @@ bool MonomialDecider2xx(int y)
                             }
                         }
 
-                        hits++;
+                        currentVisits++;
                     }
                     s++;
                 }
