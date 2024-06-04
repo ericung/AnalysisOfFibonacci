@@ -83,10 +83,13 @@ bool MonomialDecider2xx(int y)
 
     while (s <= y)
     {
+        // the constant 2
         for (int i = 0; i < 2; i++)
         {
+            // the first pass of x in 2x^2
             for (int j = 0; j < 2; j++)
             {
+                // the second pass of x in 2x^2
                 for (int k = 0; k < 2; k++)
                 {
                     if ((i == 0) && (j == 0 || j == 1) && (k == 0))
@@ -95,7 +98,7 @@ bool MonomialDecider2xx(int y)
                         {
                             if (s == y)
                             {
-                                Console.WriteLine(new String("deciding on: " + s + " - totalVisits: " + totalVisits + ""));
+                                Console.WriteLine(new String("Deciding on: " + s + " - totalVisits: " + totalVisits));
                                 return true;
                             }
                             else if (s > y)
@@ -105,7 +108,9 @@ bool MonomialDecider2xx(int y)
 
                             totalVisits += diff;
 
-                            // If the tape head is on the odd finishing state increase the diff variable by 2
+                            // If the tape head is on the odd finishing
+                            // state increase the diff variable by 2
+                            // Do this to represent x^2 in 2x^2
                             if (i == 0 && j == 1 && k == 0)
                             {
                                 diff += 2;
