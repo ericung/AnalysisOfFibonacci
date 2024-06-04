@@ -79,7 +79,6 @@ bool MonomialDecider2xx(int y)
     var totalVisits = 0;
     var currentVisits = 0;
     var diff = 1;
-    var isEven = 0;
     var s = 0;
 
     while (s <= y)
@@ -96,7 +95,7 @@ bool MonomialDecider2xx(int y)
                         {
                             if (s == y)
                             {
-                                Console.WriteLine(new String(s + ": Hits: " + totalVisits + ""));
+                                Console.WriteLine(new String("deciding on: " + s + " - totalVisits: " + totalVisits + ""));
                                 return true;
                             }
                             else if (s > y)
@@ -105,10 +104,10 @@ bool MonomialDecider2xx(int y)
                             }
 
                             totalVisits += diff;
-                            isEven++;
-                            if (isEven % 3 == 2)
+
+                            // If the tape head is on the odd finishing state increase the diff variable by 2
+                            if (i == 0 && j == 1 && k == 0)
                             {
-                                isEven = 0;
                                 diff += 2;
                             }
                         }
@@ -165,8 +164,9 @@ for (int i = 0; i < 1000; i++)
     }
 }
 
-Console.WriteLine("Number of y's accepted between 0 and 999: " + ys);
+Console.WriteLine("y's accepted between 0 and 999: " + ys);
 Console.WriteLine(new String("2,000,000 in f(x)? " + MonomialDecider2xx(2000000)));
+Console.WriteLine("Is 500000000 accepted? " + MonomialDecider2xx(500000000));
 
 writerMD.Close();
 ostrmMD.Close();
